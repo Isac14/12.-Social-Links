@@ -18,17 +18,23 @@ body{
 }
 
 #container{
-    justify-content: center;
-    width: 30vw;
     height: 95vh;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
-header{
-    width: 100%;
+header, main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+header p{
+    min-width: 40%;
+    max-width: 80%;
 }
 
 #profilePhoto{
@@ -44,4 +50,30 @@ header{
 
 #description{
     color: #919193;
+}
+
+a{
+    text-decoration: none;
+}
+
+#list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #5578BA, #40A376);    
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 25px;
+    width: 20em;
+}
+
+.listIcon{
+    width: 25px;
+    margin-left: 10px;
+}
+
+footer li{
+    list-style: none;
 }
